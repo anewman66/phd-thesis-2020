@@ -37,10 +37,10 @@ library('reshape')
 library('survival')
 
 #Remember if you paste the path in from Windows Explorer to switch the slashes from \ to /
-setwd("C:/Users/U0034370/OneDrive - Teesside University/Paper_Rebuttal/Survival")
+setwd("/path/to/folder")
 
 
-survdata <- read.csv("Updated_Survival_Master_19022020_v1.csv", header = TRUE, row.names=1)
+survdata <- read.csv("*.csv", header = TRUE, row.names=1)
 
 #sBL times (swap in OS.*.3yr or TTP.*.3yr depending on the analysis)
 timeOS <- survdata$OS_3yr

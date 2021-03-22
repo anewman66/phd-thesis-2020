@@ -40,9 +40,10 @@ library('survival')
 setwd("/path/to/folder")
 
 
-survdata <- read.csv("*.csv", header = TRUE, row.names=1)
+survdata <- read.csv("input_file.csv", header = TRUE, row.names=1)
 
 #sBL times (swap in OS.*.3yr or TTP.*.3yr depending on the analysis)
+#Remember that event column needs to be in format: 1 = event, 0 = no event.
 timeOS <- survdata$OS_3yr
 eventOS <- survdata$OS_3yr_event
 
